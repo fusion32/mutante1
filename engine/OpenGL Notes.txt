@@ -1,0 +1,13 @@
+1 - Transform Feedback:
+	Transform feedback allows the vertex shader to write the transformed geometry into a buffer
+	object which can then be used by the CPU and be used again to render the transformed object
+	saving the work of transforming the vertices twice.
+
+	At first this seems to allow the recording of demos but we only need the transforms at a
+	given time and the model itself.
+
+	Could be used in collision calculations.
+
+2 - Query Objects:
+	Query the amount of samples that passed the depth test. In other words how many samples of
+	a draw call are visible with the current transforms.

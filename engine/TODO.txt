@@ -1,0 +1,14 @@
+* Console (CVars)
+* Renderer
+* Binary Space Partitioning (Rendering)
+* Sound Sistem -> Sound files should use ogg vorbis format
+* File format that will hold the base game files compressed (using zlib or whatever)
+* Ability to add custom stuff to the game (maps, sounds, skins)
+* Ability to create addons (using Lua and XML or whatever)
+* Memory allocator interface
+* Vertex Buffer structure
+* Model structure
+* A binary model file format to improve loading time of models
+* Support for COLLADA models (maybe)
+* Vulkan API Loader
+* OpenGL API Loader

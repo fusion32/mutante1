@@ -1,0 +1,69 @@
+> programação:
+	* usar C
+	* scripts em Lua
+
+> licensa:
+
+> graficos:
+	* OpenGL
+		** tentar adicionar suporte minimo para versão 2.0
+	* Vulkan
+
+	* Direct3D9 (talvez)
+		** é posivel usar a interface em C da microsoft
+		** é possivel também compilar como C++ e linkar com o resto
+
+	-> analisar usos
+		** shadow map ou shadow volumes (distintas)
+		** deferred rendering ou deferred lightning (distintas)
+		** paralax mapping
+		** particle system
+		** ambient occlusion
+		** phong shading
+		** skeletal animation
+
+> som:
+	* OpenAL
+
+> net:
+	* usar um modelo simples de cliente (no cliente)
+	* usar epoll (linux) ou kqueue (FreeBSD) (em server de grande escala)
+	* extender para iocp (windows) (em dedicado que pode ser criado pelo jogador)
+
+> scripts:
+	* Lua
+
+> utilidade:
+	(física)
+	* escrever biblioteca de colisões
+	* escrever biblioteca de conservação de energia (momento linear e angular)
+	* efeito doppler
+	* ?
+
+	(matemática)
+	* escrever biblioteca de vetores
+	* escrever biblioteca de quaternions (rotações)
+	* escrever biblioteca de matrizes (transformações em geral)
+
+	(graficos)
+	* escrever biblioteca para janelas (windows / xserver) -> considerar QT ou SDL
+
+	(net)
+	* escrever biblioteca de mensagens
+
+	(i/o)
+	* escrever biblioteca para log do console
+	* escrever biblioteca para carregar arquivos
+	* escrever biblioteca para compactar arquivos (exemplo: .pak)
+
+	(utf-8)
+	* escrever uma biblioteca para strings UTF-8
+
+	(numeros grandes)
+	* escrever uma biblioteca para numeros grandes (RSA)
+
+> editor:
+	* criar um editor com pincél (grama, tipo de chão, etc)
+
+> modelo:
+	* usar modelo de trabalho (multi threaded jobs)

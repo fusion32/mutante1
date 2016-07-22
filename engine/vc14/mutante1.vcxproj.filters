@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="mathlib">
+      <UniqueIdentifier>{af9a2e70-3e1a-4c88-9653-107a0518dc4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{151bafe2-dd94-464a-bd65-c13493daf0a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="renderer">
+      <UniqueIdentifier>{7ce3e82e-edc8-4dd6-a051-b9c46acfd808}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="physics">
+      <UniqueIdentifier>{5ce8d290-d40a-4a4c-a3a4-485047dda3b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game">
+      <UniqueIdentifier>{13b13438-17b2-4c39-8179-e25e7bcc8145}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="renderer\vulkan">
+      <UniqueIdentifier>{e602a68a-7a96-4b68-a137-06f9df2b35a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="renderer\gl">
+      <UniqueIdentifier>{6888c496-335f-4b4d-a360-076ce4fbc9ab}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\tostring.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\matrix4.c">
+      <Filter>mathlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\quaternion.c">
+      <Filter>mathlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\vector2.c">
+      <Filter>mathlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\vector3.c">
+      <Filter>mathlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\vector4.c">
+      <Filter>mathlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmdline.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scheduler.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win32\win_main.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win32\win_wnd.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\log.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mem.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\work.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win32\win_thread.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\renderer\r_main.c">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\renderer\r_opengl.c">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\renderer\r_vulkan.c">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\renderer\r_win32.c">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\renderer\gl\gl_loader.c">
+      <Filter>renderer\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\renderer\vulkan\vk_loader.c">
+      <Filter>renderer\vulkan</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\types.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tostring.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\matrix4.h">
+      <Filter>mathlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\quaternion.h">
+      <Filter>mathlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\vector2.h">
+      <Filter>mathlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\vector3.h">
+      <Filter>mathlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\vector4.h">
+      <Filter>mathlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\event.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmdline.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\scheduler.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\system.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\log.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\keycodes.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mem.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\work.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\config.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\renderer\renderer.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\win32\win32.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\renderer\gl\glcorearb.h">
+      <Filter>renderer\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\renderer\gl\glext.h">
+      <Filter>renderer\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\renderer\gl\wglext.h">
+      <Filter>renderer\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\renderer\gl\gl_loader.h">
+      <Filter>renderer\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\renderer\vulkan\vk_loader.h">
+      <Filter>renderer\vulkan</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\renderer\gl\gl_loader.inl">
+      <Filter>renderer\gl</Filter>
+    </None>
+  </ItemGroup>
+</Project>
