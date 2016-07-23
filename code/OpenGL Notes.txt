@@ -8,6 +8,8 @@
 
 	Could be used in collision calculations.
 
+	Similar to a compute shader.
+
 2 - Query Objects:
 	Query the amount of samples that passed the depth test. In other words how many samples of
 	a draw call are visible with the current transforms.

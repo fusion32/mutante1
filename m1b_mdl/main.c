@@ -6,7 +6,7 @@
 #include "geometry.h"
 #include "util.h"
 
-int m_main(int argc, char **argv)
+int main(int argc, char **argv)
 {
 	xmlDoc *doc;
 	xmlNode *root, *cur, *aux;

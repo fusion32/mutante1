@@ -1,0 +1,3 @@
+Item (1)
+	Maybe use two versions of an include file. A public include and a local
+	one (pfx_local.h, pfx_public.h, see Quake3 engine).
