@@ -165,16 +165,14 @@
     <ClInclude Include="..\renderer\gl\wglext.h">
       <Filter>renderer\gl</Filter>
     </ClInclude>
-    <ClInclude Include="..\renderer\gl\gl_loader.h">
-      <Filter>renderer\gl</Filter>
-    </ClInclude>
     <ClInclude Include="..\renderer\vulkan\vk_loader.h">
       <Filter>renderer\vulkan</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\renderer\gl\gl_loader.inl">
+    <ClInclude Include="..\renderer\gl\gl_base.h">
       <Filter>renderer\gl</Filter>
-    </None>
+    </ClInclude>
+    <ClInclude Include="..\renderer\gl\gl_loader.h">
+      <Filter>renderer\gl</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

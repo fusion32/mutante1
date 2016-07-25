@@ -161,6 +161,7 @@
     <ClInclude Include="..\math\vector4.h" />
     <ClInclude Include="..\renderer\gl\glcorearb.h" />
     <ClInclude Include="..\renderer\gl\glext.h" />
+    <ClInclude Include="..\renderer\gl\gl_base.h" />
     <ClInclude Include="..\renderer\gl\gl_loader.h" />
     <ClInclude Include="..\renderer\gl\wglext.h" />
     <ClInclude Include="..\renderer\renderer.h" />
@@ -173,9 +174,6 @@
     <ClInclude Include="..\util.h" />
     <ClInclude Include="..\win32\win32.h" />
     <ClInclude Include="..\work.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\renderer\gl\gl_loader.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
