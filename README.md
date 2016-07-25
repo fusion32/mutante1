@@ -6,23 +6,23 @@ This is a very early version of the engine and is still a work in progress.
 File Layout
 -----------
 
-...
+```
 code/		mutante1 source code
 m1b_mdl/	model converter - converts models into the .m1b binary format
 m1b_map/	map compiler - compiles the .xml from the editor into the .m1b binary format
 m1birl/		map editor
-...
+```
 
 File Formats
 ------------
 
-...
+```
 .m1b		mutante1 binary format
 .xml		XML file
 .lua		Lua file
 .c		C source file
 .h		C header file
-...
+```
 
 Programming
 -----------

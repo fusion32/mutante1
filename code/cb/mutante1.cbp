@@ -72,17 +72,13 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="../mem.h" />
+		<Unit filename="../renderer/gl/gl_base.h" />
 		<Unit filename="../renderer/gl/gl_loader.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="../renderer/gl/gl_loader.h" />
-		<Unit filename="../renderer/gl/gl_loader1.h" />
 		<Unit filename="../renderer/gl/glcorearb.h" />
 		<Unit filename="../renderer/gl/glext.h" />
-		<Unit filename="../renderer/gl/glextensions.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="../renderer/gl/glextensions.h" />
 		<Unit filename="../renderer/gl/glxext.h" />
 		<Unit filename="../renderer/gl/wglext.h" />
 		<Unit filename="../renderer/r_main.c">
