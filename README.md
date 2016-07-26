@@ -32,7 +32,7 @@ The project will make extensive use of C, XML, and Lua languages.
 License
 -------
 
-Refer to LICENSE.txt for information about the GNU General Public License.
+Refer to LICENSE for information about the MIT License.
 
 Graphics
 --------
