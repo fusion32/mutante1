@@ -70,8 +70,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>X:\VulkanSDK\1.0.13.0\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>X:\VulkanSDK\1.0.13.0\Bin;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\VulkanSDK\1.0.21.1\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\VulkanSDK\1.0.21.1\Bin;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>X:\VulkanSDK\1.0.13.0\Include;$(IncludePath)</IncludePath>
@@ -92,7 +92,7 @@
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>opengl32.lib;vulkan-1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -138,7 +138,6 @@
     <ClCompile Include="..\renderer\r_main.c" />
     <ClCompile Include="..\renderer\r_opengl.c" />
     <ClCompile Include="..\renderer\r_vulkan.c" />
-    <ClCompile Include="..\renderer\r_win32.c" />
     <ClCompile Include="..\renderer\vulkan\vk_loader.c" />
     <ClCompile Include="..\scheduler.c" />
     <ClCompile Include="..\tostring.c" />
@@ -161,10 +160,10 @@
     <ClInclude Include="..\math\vector4.h" />
     <ClInclude Include="..\renderer\gl\glcorearb.h" />
     <ClInclude Include="..\renderer\gl\glext.h" />
-    <ClInclude Include="..\renderer\gl\gl_base.h" />
     <ClInclude Include="..\renderer\gl\gl_loader.h" />
     <ClInclude Include="..\renderer\gl\wglext.h" />
-    <ClInclude Include="..\renderer\renderer.h" />
+    <ClInclude Include="..\renderer\r_public.h" />
+    <ClInclude Include="..\renderer\r_local.h" />
     <ClInclude Include="..\renderer\vulkan\vk_loader.h" />
     <ClInclude Include="..\scheduler.h" />
     <ClInclude Include="..\system.h" />

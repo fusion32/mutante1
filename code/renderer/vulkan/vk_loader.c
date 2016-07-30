@@ -199,7 +199,7 @@ VKAPI_ATTR PFN_vkDestroySurfaceKHR								vkDestroySurfaceKHR;
 VKAPI_ATTR PFN_vkGetPhysicalDeviceSurfaceSupportKHR				vkGetPhysicalDeviceSurfaceSupportKHR;
 VKAPI_ATTR PFN_vkGetPhysicalDeviceSurfaceCapabilitiesKHR		vkGetPhysicalDeviceSurfaceCapabilitiesKHR;
 VKAPI_ATTR PFN_vkGetPhysicalDeviceSurfaceFormatsKHR				vkGetPhysicalDeviceSurfaceFormatsKHR;
-VKAPI_ATTR PFN_vkGetPhysicalDeviceSurfacePresentModesKHR		vkGetPhysicalDEviceSurfacePresentModesKHR;
+VKAPI_ATTR PFN_vkGetPhysicalDeviceSurfacePresentModesKHR		vkGetPhysicalDeviceSurfacePresentModesKHR;
 
 #if 0
 // VK_KHR_display

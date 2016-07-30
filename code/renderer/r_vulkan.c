@@ -21,17 +21,6 @@ static uint32_t				l_queueFamilyIndex;
 
 
 // ===================================================
-// Surface creation function is system specific and is
-// defined in r_win32.c, r_unix.c, etc..
-//
-// ===================================================
-
-extern const char *VK_SYS_SURFACE_EXTENSION_NAME;
-VkBool32 VK_GetCreateSurfaceProcAddr(VkInstance instance);
-VkResult VK_CreateSurface(VkInstance instance, VkSurfaceKHR *pSurface);
-
-
-// ===================================================
 // Auxiliary functions for debugging
 //
 // ===================================================
@@ -102,7 +91,6 @@ static void VK_CreateInstance()
 		VK_EXT_DEBUG_REPORT_EXTENSION_NAME,
 #endif
 		VK_KHR_SURFACE_EXTENSION_NAME,
-		VK_SYS_SURFACE_EXTENSION_NAME,
 	};
 
 	VkInstanceCreateInfo createInfo = {
@@ -211,10 +199,32 @@ static void VK_GetPhysicalDevice()
 	l_gpu = devices[devIdx];
 }
 
-static void VK_CreateSurface1()
+#if defined(_WIN32)
+/* TODO: review this
+VkResult VK_CreateSurface(VkInstance instance, VkSurfaceKHR *pSurface)
 {
-	//
+	HWND hwnd;
+	HINSTANCE hinstance;
+	VkResult res;
+
+	if (fpCreateWin32SurfaceKHR == NULL)
+		return VK_NOT_READY;
+
+	hwnd = WIN32_GetWindowHandle();
+	hinstance = GetModuleHandle(NULL);
+	VkWin32SurfaceCreateInfoKHR createInfo = {
+		.sType = VK_STRUCTURE_TYPE_WIN32_SURFACE_CREATE_INFO_KHR,
+		.pNext = NULL,
+		.flags = 0,
+		.hinstance = hinstance,
+		.hwnd = hwnd
+	};
+
+	res = fpCreateWin32SurfaceKHR(instance, &createInfo, NULL, pSurface);
+	return res;
 }
+*/
+#endif
 
 static void VK_CreateDevice()
 {

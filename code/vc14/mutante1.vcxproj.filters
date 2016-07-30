@@ -85,9 +85,6 @@
     <ClCompile Include="..\renderer\r_vulkan.c">
       <Filter>renderer</Filter>
     </ClCompile>
-    <ClCompile Include="..\renderer\r_win32.c">
-      <Filter>renderer</Filter>
-    </ClCompile>
     <ClCompile Include="..\renderer\gl\gl_loader.c">
       <Filter>renderer\gl</Filter>
     </ClCompile>
@@ -150,9 +147,6 @@
     <ClInclude Include="..\config.h">
       <Filter>core</Filter>
     </ClInclude>
-    <ClInclude Include="..\renderer\renderer.h">
-      <Filter>renderer</Filter>
-    </ClInclude>
     <ClInclude Include="..\win32\win32.h">
       <Filter>win32</Filter>
     </ClInclude>
@@ -168,11 +162,14 @@
     <ClInclude Include="..\renderer\vulkan\vk_loader.h">
       <Filter>renderer\vulkan</Filter>
     </ClInclude>
-    <ClInclude Include="..\renderer\gl\gl_base.h">
-      <Filter>renderer\gl</Filter>
-    </ClInclude>
     <ClInclude Include="..\renderer\gl\gl_loader.h">
       <Filter>renderer\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\renderer\r_local.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\renderer\r_public.h">
+      <Filter>renderer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

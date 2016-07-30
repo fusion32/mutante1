@@ -1,5 +1,5 @@
-#ifndef __RENDERER_H__
-#define __RENDERER_H__
+#ifndef __R_PUBLIC_H__
+#define __R_PUBLIC_H__
 
 #include "../types.h"
 
@@ -65,4 +65,4 @@ extern void (*R_Function1)(int a, int b);
 extern void (*R_Function2)(void *a, void *b);
 
 
-#endif //__RENDERER_H__
+#endif //__R_PUBLIC_H__

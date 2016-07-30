@@ -52,7 +52,7 @@ void LOG_Init()
 		// TODO: add a command line to disable log
 		// saving so in a single execution you can
 		// save or not. (no switching in between)
-		l_saving = 0;
+		l_saving = 1;
 		l_ok = 1;
 	}
 }

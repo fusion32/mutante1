@@ -8,7 +8,7 @@
 #include "../work.h"
 #include "win32.h"
 
-#include "../renderer/renderer.h"
+#include "../renderer/r_public.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -23,7 +23,7 @@ void SYS_Error(const char *fmt, ...)
 	vsnprintf(errMessage, 256, fmt, ap);
 	va_end(ap);
 
-	LOG("SYSTEM ERROR");
+	LOG_ERROR("/!\\ FATAL ERROR /!\\");
 	LOG_ERROR(errMessage);
 	exit(-1);
 }

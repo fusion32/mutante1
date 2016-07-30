@@ -1,3 +1,5 @@
+* replace integers with stdbool (where the variable is a boolean of course)
+
 * Console (CVars)
 * Renderer
 * Binary Space Partitioning (Rendering)

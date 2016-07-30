@@ -1,17 +1,16 @@
-#include "renderer.h"
-
-#include "gl/gl_loader.h"
-
-void GL_CreateContext();
-void GL_DestroyContext();
+#include "r_local.h"
+#include "../system.h"
 
 void R_Init()
 {
-	GL_CreateContext();
-	GL_LoadAPI();
+	if(GL_Init() == false)
+		SYS_Error("R_Init: Failed to initialize renderer!");
+
+	// if unable to load any renderer just call SYS_Error
+	// and terminate execution
 }
 
 void R_Cleanup()
 {
-	GL_DestroyContext();
+	GL_Cleanup();
 }
