@@ -70,12 +70,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\VulkanSDK\1.0.21.1\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\VulkanSDK\1.0.21.1\Bin;$(LibraryPath)</LibraryPath>
+    <IncludePath>X:\VulkanSDK\1.0.21.1\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>X:\VulkanSDK\1.0.21.1\Bin;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>X:\VulkanSDK\1.0.13.0\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>X:\VulkanSDK\1.0.13.0\Bin;$(LibraryPath)</LibraryPath>
+    <IncludePath>X:\VulkanSDK\1.0.21.1\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>X:\VulkanSDK\1.0.21.1\Bin;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
